@@ -128,6 +128,7 @@
     <ClCompile Include="task02.cpp" />
     <ClCompile Include="task03.cpp" />
     <ClCompile Include="task04.cpp" />
+    <ClCompile Include="task05.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
