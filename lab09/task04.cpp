@@ -1,6 +1,6 @@
 #include "main.h"
 
-void task03() {
+void task04() {
 	int n, m;
 
 	do {
@@ -38,24 +38,26 @@ void task03() {
 	}
 
 
-	cout << "\nShow massiv: \n";
+	int t = 100;
+
+	cout << "\nPrint massiv: \n";
 	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			array[i][j] = t;
+			t -= 5;
 
-		for (int j = 0; j < (m - 1); j++) {
-			array[i][j] = getRandomInt(0, 53);
-			cout << array[i][j] << "\t;\t";
+			cout << array[i][j] << "\t";
 		}
-
-		array[i][m - 1] = getRandomInt(0, 53);
-		cout << array[i][m - 1] << endl;
+		cout << endl;
 	}
 
-	cout << "\nShow reverse massiv: \n";
-	for (int i = (n - 1); i >= 0; i--) {
-		for (int j = (m - 1); j > 0; j--) {
-			cout << array[i][j] << "\t;\t";
+	cout << "\nPrint new massiv: \n";
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			array[i][j] *= -2;
+			cout << array[i][j] << "\t";
 		}
-		cout << array[i][0] << endl;
+		cout << endl;
 	}
 
 
